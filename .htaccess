@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/login.html
+RewriteCond %{REQUEST_URI} !^/login.php
+RewriteCond %{REQUEST_URI} !^/index.html
+RewriteCond %{REQUEST_URI} !^/check_login.php
+RewriteCond %{REQUEST_URI} !^/logout.php
+RewriteCond %{REQUEST_URI} !^/css/
+RewriteCond %{REQUEST_URI} !^/js/
+RewriteCond %{REQUEST_URI} !^/images/
+RewriteCond %{REQUEST_URI} !^/fonts/
+RewriteRule ^(.*)$ login.html [L]
