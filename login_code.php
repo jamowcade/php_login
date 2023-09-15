@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Perform a query to check if the username and password match
   $query = "SELECT * FROM users WHERE username='admin'or 1=1 --'' AND password='$password'";
 
-  'or 1=1 --'
+  
   $result = mysqli_query($conn, $query);
 
   // Check if the query was successful and if a matching user was found
